@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { MessageSquare, Sparkle } from "lucide-react";
+import { MessageSquare, Shield, Sparkle } from "lucide-react";
 import { Map } from "lucide-react";
 import ThemeToggle from "./theme-toggle";
 import {
@@ -37,6 +37,15 @@ export default function Navbar() {
             <MessageSquare className="h-4 w-4" />
             FeedBack
           </Link>
+           <Button>
+            <Link
+              href="/admin"
+              className="text-sm hover:text-primary transition-colors flex items-center gap-1"
+            >
+              <Shield className="h-4 w-4" />
+              Admin
+            </Link>
+          </Button>
         </div>
 
         
